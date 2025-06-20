@@ -43,25 +43,24 @@ jobs:
       # Setup git large files
       - name: Set up Git LFS
         run: |
-          git config --global user.name ${{ secrets.username }}
-          git config --global user.email ${{ secrets.email }}
+          git config --global user.name "${{ secrets.username }}"
+          git config --global user.email "${{ secrets.email }}"
           git remote set-url origin https://x-access-token:${{ secrets.GH_PAT }}@github.com/${{ github.repository }}.git
-          git clean -fd
-          git pull origin main
+      
+          # (1) Cek apakah ada perubahan dan commit `mlruns/`
           git lfs install
           git lfs track "mlruns/**"
           git add .gitattributes
-          git commit -m "Track large files in mlruns with Git LFS" || true
+          git add mlruns/ || echo "No mlruns folder yet"
+          git commit -m "Save mlruns before pulling main" || echo "Nothing to commit"
+      
+          # (2) Push dulu untuk menghindari konflik
           git push origin main
-      # Save models to GitHub Repository
-      - name: Save mlruns to repo
-        run: |
-          git config --global user.name ${{ secrets.username }}
-          git config --global user.email ${{ secrets.email }}
-          git remote set-url origin https://x-access-token:${{ secrets.GH_PAT }}@github.com/${{ github.repository }}.git
-          git add mlruns/
-          git commit -m "Save mlruns from CI run"
-          git push origin main
+      
+          # (3) Baru pull setelah commit lokal aman
+          git pull origin main
+
+     
       # Get latest run_id
       - name: Get latest MLflow run_id
         run: |
