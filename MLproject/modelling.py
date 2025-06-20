@@ -32,6 +32,11 @@ if __name__ == "__main__":
         model.fit(X_train, y_train)
 
         ## Log parameter
+        mlflow.sklearn.log_model(
+            sk_model=model,
+            artifact_path='attrition_model',
+            input_example=input_example
+            )
         mlflow.log_param("n_estimators", n_estimators)
         mlflow.log_param("max_depth", max_depth)
 
