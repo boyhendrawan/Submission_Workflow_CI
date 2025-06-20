@@ -1,0 +1,7 @@
+artifact_location: mlflow-artifacts:/868332790926192832
+creation_time: 1750443599683
+experiment_id: '868332790926192832'
+last_update_time: 1750443599683
+lifecycle_stage: active
+name: Build Attrition Model (without hyperparamter tunning & autlog way) with RandomForest
+  Algorithm

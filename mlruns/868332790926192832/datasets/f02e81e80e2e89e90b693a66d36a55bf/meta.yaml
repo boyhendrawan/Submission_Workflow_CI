@@ -1,0 +1,56 @@
+digest: 413afbb1
+name: dataset
+profile: '{"num_rows": 14900, "num_elements": 834400}'
+schema: '{"mlflow_colspec": [{"type": "double", "name": "num__Age", "required": true},
+  {"type": "double", "name": "num__Years at Company", "required": true}, {"type":
+  "double", "name": "num__Monthly Income", "required": true}, {"type": "double", "name":
+  "num__Number of Promotions", "required": true}, {"type": "double", "name": "num__Distance
+  from Home", "required": true}, {"type": "double", "name": "num__Number of Dependents",
+  "required": true}, {"type": "double", "name": "num__Company Tenure", "required":
+  true}, {"type": "double", "name": "cat__Gender_Female", "required": true}, {"type":
+  "double", "name": "cat__Gender_Male", "required": true}, {"type": "double", "name":
+  "cat__Job Role_Education", "required": true}, {"type": "double", "name": "cat__Job
+  Role_Finance", "required": true}, {"type": "double", "name": "cat__Job Role_Healthcare",
+  "required": true}, {"type": "double", "name": "cat__Job Role_Media", "required":
+  true}, {"type": "double", "name": "cat__Job Role_Technology", "required": true},
+  {"type": "double", "name": "cat__Work-Life Balance_Excellent", "required": true},
+  {"type": "double", "name": "cat__Work-Life Balance_Fair", "required": true}, {"type":
+  "double", "name": "cat__Work-Life Balance_Good", "required": true}, {"type": "double",
+  "name": "cat__Work-Life Balance_Poor", "required": true}, {"type": "double", "name":
+  "cat__Job Satisfaction_High", "required": true}, {"type": "double", "name": "cat__Job
+  Satisfaction_Low", "required": true}, {"type": "double", "name": "cat__Job Satisfaction_Medium",
+  "required": true}, {"type": "double", "name": "cat__Job Satisfaction_Very High",
+  "required": true}, {"type": "double", "name": "cat__Performance Rating_Average",
+  "required": true}, {"type": "double", "name": "cat__Performance Rating_Below Average",
+  "required": true}, {"type": "double", "name": "cat__Performance Rating_High", "required":
+  true}, {"type": "double", "name": "cat__Performance Rating_Low", "required": true},
+  {"type": "double", "name": "cat__Overtime_No", "required": true}, {"type": "double",
+  "name": "cat__Overtime_Yes", "required": true}, {"type": "double", "name": "cat__Education
+  Level_Associate Degree", "required": true}, {"type": "double", "name": "cat__Education
+  Level_Bachelor\u2019s Degree", "required": true}, {"type": "double", "name": "cat__Education
+  Level_High School", "required": true}, {"type": "double", "name": "cat__Education
+  Level_Master\u2019s Degree", "required": true}, {"type": "double", "name": "cat__Education
+  Level_PhD", "required": true}, {"type": "double", "name": "cat__Marital Status_Divorced",
+  "required": true}, {"type": "double", "name": "cat__Marital Status_Married", "required":
+  true}, {"type": "double", "name": "cat__Marital Status_Single", "required": true},
+  {"type": "double", "name": "cat__Job Level_Entry", "required": true}, {"type": "double",
+  "name": "cat__Job Level_Mid", "required": true}, {"type": "double", "name": "cat__Job
+  Level_Senior", "required": true}, {"type": "double", "name": "cat__Company Size_Large",
+  "required": true}, {"type": "double", "name": "cat__Company Size_Medium", "required":
+  true}, {"type": "double", "name": "cat__Company Size_Small", "required": true},
+  {"type": "double", "name": "cat__Remote Work_No", "required": true}, {"type": "double",
+  "name": "cat__Remote Work_Yes", "required": true}, {"type": "double", "name": "cat__Leadership
+  Opportunities_No", "required": true}, {"type": "double", "name": "cat__Leadership
+  Opportunities_Yes", "required": true}, {"type": "double", "name": "cat__Innovation
+  Opportunities_No", "required": true}, {"type": "double", "name": "cat__Innovation
+  Opportunities_Yes", "required": true}, {"type": "double", "name": "cat__Company
+  Reputation_Excellent", "required": true}, {"type": "double", "name": "cat__Company
+  Reputation_Fair", "required": true}, {"type": "double", "name": "cat__Company Reputation_Good",
+  "required": true}, {"type": "double", "name": "cat__Company Reputation_Poor", "required":
+  true}, {"type": "double", "name": "cat__Employee Recognition_High", "required":
+  true}, {"type": "double", "name": "cat__Employee Recognition_Low", "required": true},
+  {"type": "double", "name": "cat__Employee Recognition_Medium", "required": true},
+  {"type": "double", "name": "cat__Employee Recognition_Very High", "required": true}]}'
+source: '{"tags": {"mlflow.user": "boyhe", "mlflow.source.name": ".\\modelling.py",
+  "mlflow.source.type": "LOCAL", "mlflow.source.git.commit": "1d92f4819f39fe70b3f15d1206efa1db46e2f58e"}}'
+source_type: code

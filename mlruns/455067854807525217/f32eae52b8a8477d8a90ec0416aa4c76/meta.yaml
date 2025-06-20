@@ -1,0 +1,14 @@
+artifact_uri: mlflow-artifacts:/455067854807525217/f32eae52b8a8477d8a90ec0416aa4c76/artifacts
+end_time: 1750099493016
+entry_point_name: ''
+experiment_id: '455067854807525217'
+lifecycle_stage: active
+run_id: f32eae52b8a8477d8a90ec0416aa4c76
+run_name: mysterious-shrew-641
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1750098774557
+status: 3
+tags: []
+user_id: boyhe

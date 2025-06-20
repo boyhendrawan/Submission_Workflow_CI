@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/455067854807525217/e0467e3f818f4d3c8764b20bbc510bb8/artifacts
+deleted_time: 1750097766073
+end_time: 1750097413405
+entry_point_name: ''
+experiment_id: '455067854807525217'
+lifecycle_stage: deleted
+run_id: e0467e3f818f4d3c8764b20bbc510bb8
+run_name: worried-crow-450
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1750096242142
+status: 4
+tags: []
+user_id: boyhe

@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/455067854807525217/972b4e7491a34356891fd664b36c01be/artifacts
+deleted_time: 1750097766065
+end_time: 1750096237469
+entry_point_name: ''
+experiment_id: '455067854807525217'
+lifecycle_stage: deleted
+run_id: 972b4e7491a34356891fd664b36c01be
+run_name: debonair-seal-896
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1750096165304
+status: 4
+tags: []
+user_id: boyhe

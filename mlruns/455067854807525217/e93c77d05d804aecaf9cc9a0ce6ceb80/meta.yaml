@@ -1,0 +1,14 @@
+artifact_uri: mlflow-artifacts:/455067854807525217/e93c77d05d804aecaf9cc9a0ce6ceb80/artifacts
+end_time: 1750310373215
+entry_point_name: ''
+experiment_id: '455067854807525217'
+lifecycle_stage: active
+run_id: e93c77d05d804aecaf9cc9a0ce6ceb80
+run_name: colorful-wasp-155
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1750309597836
+status: 3
+tags: []
+user_id: boyhendrawan
