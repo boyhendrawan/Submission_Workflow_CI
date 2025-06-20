@@ -25,18 +25,18 @@ if __name__ == "__main__":
     max_depth = int(sys.argv[2]) if len(sys.argv) > 2 else 20
 
     with mlflow.start_run():
+        mlflow.sklearn.autolog()  # Move this up, before training
         model = RandomForestClassifier(n_estimators=n_estimators, max_depth=max_depth)
         model.fit(X_train, y_train)
-        mlflow.sklearn.autolog()  # Move this up, before training
 
-        ## Log parameter
-        mlflow.sklearn.log_model(
-            sk_model=model,
-            artifact_path='attrition_model',
-            input_example=input_example
-            )
-        mlflow.log_param("n_estimators", n_estimators)
-        mlflow.log_param("max_depth", max_depth)
+        # ## Log parameter
+        # mlflow.sklearn.log_model(
+        #     sk_model=model,
+        #     artifact_path='attrition_model',
+        #     input_example=input_example
+        #     )
+        # mlflow.log_param("n_estimators", n_estimators)
+        # mlflow.log_param("max_depth", max_depth)
 
         # Log evaluation metrics (sama dengan autolog)
         y_pred = model.predict(X_test)
