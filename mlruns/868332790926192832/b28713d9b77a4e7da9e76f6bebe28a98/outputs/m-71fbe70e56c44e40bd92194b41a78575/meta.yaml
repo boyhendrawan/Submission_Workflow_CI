@@ -1,6 +1,3 @@
-destination_id: m-71fbe70e56c44e40bd92194b41a78575
-destination_type: MODEL_OUTPUT
-source_id: m-71fbe70e56c44e40bd92194b41a78575
-source_type: RUN_OUTPUT
-step: 0
-tags: {}
+version https://git-lfs.github.com/spec/v1
+oid sha256:d2683393c8fa18a9173a8bc7909958e86a7df5516f3be591daaeada865688677
+size 169

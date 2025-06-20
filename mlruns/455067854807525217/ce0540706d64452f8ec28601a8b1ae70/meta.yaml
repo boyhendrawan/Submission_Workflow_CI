@@ -1,14 +1,3 @@
-artifact_uri: mlflow-artifacts:/455067854807525217/ce0540706d64452f8ec28601a8b1ae70/artifacts
-end_time: 1750098486044
-entry_point_name: ''
-experiment_id: '455067854807525217'
-lifecycle_stage: active
-run_id: ce0540706d64452f8ec28601a8b1ae70
-run_name: unique-gull-379
-source_name: ''
-source_type: 4
-source_version: ''
-start_time: 1750097745769
-status: 3
-tags: []
-user_id: boyhe
+version https://git-lfs.github.com/spec/v1
+oid sha256:95eb81ad6046a7526f96ba83b1586393f45bc7ee6bae29a5f2f315e634ff59ef
+size 376

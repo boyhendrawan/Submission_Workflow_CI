@@ -1,10 +1,3 @@
-artifact_location: mlflow-artifacts:/455067854807525217/models/m-3abb8c71eafc48ed9c95e25a579702a1/artifacts
-creation_timestamp: 1750310335192
-experiment_id: '455067854807525217'
-last_updated_timestamp: 1750310373118
-model_id: m-3abb8c71eafc48ed9c95e25a579702a1
-model_type: ''
-name: model
-source_run_id: e93c77d05d804aecaf9cc9a0ce6ceb80
-status: 2
-status_message: null
+version https://git-lfs.github.com/spec/v1
+oid sha256:822ce735c4fe69966d0aa6b575bf2dbfc82347ddfbd5bfd594e200d756f92ffc
+size 367

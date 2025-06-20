@@ -1,8 +1,3 @@
-aliases:
-  production: '1'
-creation_timestamp: 1750235236384
-deployment_job_id: null
-deployment_job_state: null
-description: ''
-last_updated_timestamp: 1750239720925
-name: Testing
+version https://git-lfs.github.com/spec/v1
+oid sha256:f569094f6453c8ecfae396bc07c19ac412ab71ad9853be70b0e10842caa98b94
+size 180
