@@ -26,10 +26,10 @@ if __name__ == "__main__":
     n_estimators = int(sys.argv[1]) if len(sys.argv) > 1 else 300
     max_depth = int(sys.argv[2]) if len(sys.argv) > 2 else 20
 
-    mlflow.sklearn.autolog()  # Move this up, before training
     with mlflow.start_run():
         model = RandomForestClassifier(n_estimators=n_estimators, max_depth=max_depth)
         model.fit(X_train, y_train)
+        mlflow.sklearn.autolog()  # Move this up, before training
 
         ## Log parameter
         mlflow.sklearn.log_model(
