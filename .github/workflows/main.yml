@@ -46,21 +46,20 @@ jobs:
           git config --global user.name "${{ secrets.username }}"
           git config --global user.email "${{ secrets.email }}"
           git remote set-url origin https://x-access-token:${{ secrets.GH_PAT }}@github.com/${{ github.repository }}.git
-      
+
           # (1) Cek apakah ada perubahan dan commit `mlruns/`
           git lfs install
           git lfs track "mlruns/**"
           git add .gitattributes
           git add mlruns/ || echo "No mlruns folder yet"
           git commit -m "Save mlruns before pulling main" || echo "Nothing to commit"
-      
+
           # (2) Push dulu untuk menghindari konflik
           git push origin main
-      
+
           # (3) Baru pull setelah commit lokal aman
           git pull origin main
 
-     
       # Get latest run_id of MLflow
       - name: Get MLflow latest run_id
         run: |
@@ -82,7 +81,7 @@ jobs:
       # Tag the Docker image
       - name: Tag Docker Image
         run: |
-          docker tag cc ${{ secrets.DOCKER_HUB_USERNAME }}/cc-attrition:latest
+          docker tag cc-attrition ${{ secrets.DOCKER_HUB_USERNAME }}/cc-attrition:latest
       # Push Docker image to Docker Hub
       - name: Push Docker Image
         run: |
