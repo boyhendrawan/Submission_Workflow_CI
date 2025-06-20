@@ -61,16 +61,17 @@ jobs:
           git pull origin main
 
      
-      # Get latest run_id
-      - name: Get latest MLflow run_id
+      # Get latest run_id of MLflow
+      - name: Get MLflow latest run_id
         run: |
-          RUN_ID=$(ls -td mlruns/0/*/ | head -n 1 | cut -d'/' -f3)
+          RUN_ID=$(ls -td mlruns/0/*/ | grep -v -e 'mlruns/0/models/' -e 'mlruns/0/datasets/' | head -n 1 | cut -d'/' -f3)
           echo "RUN_ID=$RUN_ID" >> $GITHUB_ENV
           echo "Latest run_id: $RUN_ID"
-      # Build Docker Model
-      - name: Build Docker Model
+
+      # Build docker model
+      - name: Build docker model
         run: |
-          mlflow models build-docker --model-uri "./mlruns/0/$RUN_ID/artifacts/model" --name "cc-attrition"
+          mlflow models build-docker --model-uri "runs:/$RUN_ID/model" --name "cc-attrition"
       # Login to Docker Hub
       - name: Log in to Docker Hub
         uses: docker/login-action@v2
