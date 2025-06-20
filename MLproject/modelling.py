@@ -1,7 +1,7 @@
 import mlflow
 import pandas as pd
 from sklearn.ensemble import RandomForestClassifier
-from sklearn.model_selection import train_test_split
+from sklearn.metrics import recall_score, f1_score, accuracy_score, precision_score, roc_auc_score, log_loss
 import random
 import numpy as np
 import os
@@ -31,10 +31,23 @@ if __name__ == "__main__":
         model = RandomForestClassifier(n_estimators=n_estimators, max_depth=max_depth)
         model.fit(X_train, y_train)
 
-        # Predict and log accuracy
-        accuracy = model.score(X_test, y_test)
-        mlflow.log_metric("accuracy", accuracy)
+        ## Log parameter
+        mlflow.log_param("n_estimators", n_estimators)
+        mlflow.log_param("max_depth", max_depth)
 
-        # Explicitly log the model (this creates artifacts/model/)
-        mlflow.sklearn.log_model(model, artifact_path="model", input_example=input_example)
+        # Log evaluation metrics (sama dengan autolog)
+        y_pred = model.predict(X_test)
+        precission = precision_score(y_test, y_pred)
+        recall = recall_score(y_test, y_pred)
+        f1score = f1_score(y_test, y_pred)
+        accuracy = accuracy_score(y_test, y_pred)
+        auc = roc_auc_score(y_test, y_pred)
+        logloss = log_loss(y_test, y_pred)
+
+        mlflow.log_metric('accuracy', accuracy)
+        mlflow.log_metric('precission', precission)
+        mlflow.log_metric('recall', recall)
+        mlflow.log_metric('f1_score', f1score)
+        mlflow.log_metric('custom_roc_auc', auc)
+        mlflow.log_metric('custom_log_loss', logloss)
 
