@@ -1,14 +1,3 @@
-artifact_uri: mlflow-artifacts:/0/41af092ef06b403faa2b0592bc22c7d4/artifacts
-end_time: 1750238009540
-entry_point_name: ''
-experiment_id: '0'
-lifecycle_stage: active
-run_id: 41af092ef06b403faa2b0592bc22c7d4
-run_name: ambitious-seal-120
-source_name: ''
-source_type: 4
-source_version: ''
-start_time: 1750237897761
-status: 4
-tags: []
-user_id: boyhe
+version https://git-lfs.github.com/spec/v1
+oid sha256:415068edf6212d4184da5bfe8413ccd1c08bf542bfe542bef48f3b21813c46bc
+size 345
