@@ -1,0 +1,14 @@
+artifact_uri: mlflow-artifacts:/0/87f7e805d03942d4b28ed671b0c01442/artifacts
+end_time: 1750237790638
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 87f7e805d03942d4b28ed671b0c01442
+run_name: fun-sloth-90
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1750237790427
+status: 4
+tags: []
+user_id: boyhe

@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/455067854807525217/24f0485a9a3a48f4b245f692a8ce7766/artifacts
+deleted_time: 1750097766067
+end_time: null
+entry_point_name: ''
+experiment_id: '455067854807525217'
+lifecycle_stage: deleted
+run_id: 24f0485a9a3a48f4b245f692a8ce7766
+run_name: tasteful-lynx-767
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1750097610136
+status: 1
+tags: []
+user_id: boyhe

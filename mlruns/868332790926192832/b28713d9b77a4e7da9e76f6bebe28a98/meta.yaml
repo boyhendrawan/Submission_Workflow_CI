@@ -1,0 +1,14 @@
+artifact_uri: mlflow-artifacts:/868332790926192832/b28713d9b77a4e7da9e76f6bebe28a98/artifacts
+end_time: 1750443671680
+entry_point_name: ''
+experiment_id: '868332790926192832'
+lifecycle_stage: active
+run_id: b28713d9b77a4e7da9e76f6bebe28a98
+run_name: brawny-skink-398
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1750443602705
+status: 3
+tags: []
+user_id: boyhe
