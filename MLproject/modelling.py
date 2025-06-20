@@ -9,12 +9,10 @@ import warnings
 import sys
 
 if __name__ == "__main__":
-    warnings.filterwarnings("ignore")
-    np.random.seed(40)
 
-    file_path = sys.argv[3] if len(sys.argv) > 3 else os.path.join(os.path.dirname(os.path.abspath(__file__)), "clean_train.csv")
+    file_path = sys.argv[3] if len(sys.argv) > 3 else os.path.join(os.path.dirname(os.path.abspath(__file__)), "./clean_train.csv")
     data_train = pd.read_csv(file_path)
-    file_path_test = sys.argv[4] if len(sys.argv) > 4 else os.path.join(os.path.dirname(os.path.abspath(__file__)), "clean_test.csv")
+    file_path_test = sys.argv[4] if len(sys.argv) > 4 else os.path.join(os.path.dirname(os.path.abspath(__file__)), "./clean_test.csv")
     data_test = pd.read_csv(file_path_test)
 
     X_train = data_train.drop("Attrition", axis=1)
